@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
    <head>
       <meta charset="utf-8">
@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <link rel="stylesheet" href="assets/css/style.css">
    </head>
-   <body class="bg-dark text-white">
+   <body class="text-white change_color" id="bg-dark">
       <div id="topbar" class="d-flex align-items-center">
          <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
@@ -41,7 +41,7 @@
                      <li><a href="#Educatio">Education</a></li>
                      <li><a href="#Service">Service</a></li>
                      <li><a href="#MyTeamCoder">MyTeamCoder</a></li>
-                     <li><a href="#Concat">Concat</a></li>
+                     <li><a href="#contact">Concat</a></li>
                   </ul>
                </nav>
                <div class="d-flex align-items-center">
@@ -222,42 +222,42 @@
       </section>
       <section id="contact" class="py-5">
       <h2 class="text-center">Contact</h2>
-<?php
-    $servername="localhost";
-    $username="root";
-    $password="";
-    $dbname="nave_data";
+<!-- <?php
+   //  $servername="localhost";
+   //  $username="root";
+   //  $password="";
+   //  $dbname="nave_data";
 
-    $conn =mysqli_connect( $servername,$username, $password, $dbname);
+   //  $conn =mysqli_connect( $servername,$username, $password, $dbname);
 
-    if(!$conn){
-      die("conection not sucessfully" .mysqli_connect_error());
+   //  if(!$conn){
+   //    die("conection not sucessfully" .mysqli_connect_error());
 
-    }
-    else {
-      // echo "connection sucessfully <br>";
-    }
+   //  }
+   //  else {
+   //    // echo "connection sucessfully <br>";
+   //  }
 
-    if($_SERVER["REQUEST_METHOD"]=="POST"){
-      $name=$_POST["name"];
-      $email=$_POST["email"];
-      $message=$_POST["message"];
+   //  if($_SERVER["REQUEST_METHOD"]=="POST"){
+   //    $name=$_POST["name"];
+   //    $email=$_POST["email"];
+   //    $message=$_POST["message"];
    
-    }
+   //  }
 
 
-    $sql ="INSERT INTO `save_data` (`s.no`, `name`, `email`, `message`) VALUES (NULL, '$name', '$email', ' $message,')";    
-    $result =mysqli_query($conn,$sql);
+   //  $sql ="INSERT INTO `save_data` (`s.no`, `name`, `email`, `message`) VALUES (NULL, '$name', '$email', ' $message,')";    
+   //  $result =mysqli_query($conn,$sql);
 
-    if($result){
-      // echo "insert sucessfully";
+   //  if($result){
+   //    // echo "insert sucessfully";
       
-    }
-    else{
-      echo "insert not sucessfully";
-    }
+   //  }
+   //  else{
+   //    echo "insert not sucessfully";
+   //  }
                                     
-?>
+?> -->
 <div class="container">
    <div class="row">
       <div class="col-lg-6">
@@ -285,39 +285,163 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10186.8093075403!2d75.724066!3d27.166716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dabb0433208a1%3A0xef08b2a470bb1937!2sCode%20Break%20Point!5e1!3m2!1sen!2sin!4v1724739106960!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
    </div>
-</div>
+</div>   
+</section>
+
+<div class="swtech_ican ">
+                              <a onclick="tippp()">
+                            <!-- <input type="checkbox" hidden="hidden" id="username"> -->
+                            <label class="switch" for="username"></label>
+                            </a>
+                            </div>
+   <footer class="footer-section">              
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                           <div class="row">
+                              <div class="col-lg-5">
+                              <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                
+                            </ul>
+                              </div>
+                              <div class="col-lg-7">
+                                 <ul>
+                              <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                               </ul>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            
 
 
-         
-      </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       <script type="text/javascript">
          function rmenu() {
          var mobile=document.getElementById('navbar');
-         
          mobile.classList.toggle('show');
-         
-         
          var close=document.querySelector('.icon i');
-         
          close.classList.toggle('fa-close');
          close.classList.toggle('fa-bars');
-         
          }
-         
          // Array of words to cycle through
          const words = ["web developer", "designer", "coder",];
          let wordIndex = 0;
-         
          // Function to change the content
          function changeText() {
            const spanElement = document.getElementById("changing-text");
            spanElement.textContent = words[wordIndex];
            wordIndex = (wordIndex + 1) % words.length; // Cycle through the words
          }
-         
          // Change text every 3 seconds
          setInterval(changeText, 2000);
+      </script>
+      <script>
+         function tippp() {
+          var bg=document.querySelector('.change_color');
+              bg.classList.toggle('ddm');
+    
+         }
       </script>
    </body>
 </html>
